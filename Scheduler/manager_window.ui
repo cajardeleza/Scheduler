@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>manager_window</class>
+ <widget class="QMainWindow" name="manager_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>692</width>
+    <height>244</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>manager_window</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="newEmployeeBtn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>211</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add New Employee</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scheduleBtn">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>30</y>
+      <width>211</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>View/Edit Schedule</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="availabilityBtn">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>30</y>
+      <width>191</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Availabilty</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>692</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>newEmployeeBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>newEmployeeBtn</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scheduleBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>scheduleBtn</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>565</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>565</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>availabilityBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>availabilityBtn</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>345</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>345</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
